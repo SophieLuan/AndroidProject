@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "552147219534",
+    "project_id": "gp-24s2-56f54",
+    "storage_bucket": "gp-24s2-56f54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552147219534:android:5c8241e112a8268c16ff1f",
+        "android_client_info": {
+          "package_name": "com.example.smartcityapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxQyifODnIANo1vXAbJCiWusChBbvCOxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

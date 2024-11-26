@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000"
+    tools:context=".Login.Login">
+
+    <!-- @author: Ziang Wang -->
+
+    <!-- Title Text (adjusted for landscape) -->
+    <TextView
+        android:id="@+id/LoginPageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/title"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintEnd_toEndOf="parent"
+        tools:layout_constraintHorizontal_bias="0.52"
+        tools:layout_constraintStart_toStartOf="parent"
+        tools:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Subtitle Text (next to title for landscape) -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/subtitle"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LoginPageTitle"
+        tools:layout_constraintEnd_toEndOf="parent"
+        tools:layout_constraintHorizontal_bias="0.534"
+        tools:layout_constraintStart_toStartOf="parent"
+        tools:layout_constraintTop_toBottomOf="@+id/LoginPageTitle" />
+
+    <!-- Username Input -->
+    <EditText
+        android:id="@+id/UserNameEdit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/Username"
+        android:padding="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/Login_button"
+        app:layout_constraintEnd_toStartOf="@+id/PassWordEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.38" />
+
+    <!-- Password Input -->
+    <EditText
+        android:id="@+id/PassWordEdit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/Password"
+        android:inputType="textPassword"
+        android:padding="12dp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/Login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/UserNameEdit"
+        app:layout_constraintWidth_percent="0.38" />
+
+    <!-- Login Button -->
+    <Button
+        android:id="@+id/Login_button"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#FF0000"
+        android:text="@string/Login"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/signUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FF0000"
+        android:text="@string/Signup"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

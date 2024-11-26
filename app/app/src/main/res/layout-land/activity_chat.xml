@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".P2P.Chat">
+
+    <!-- @author: Ziang Wang -->
+
+    <!-- Top Button Logo (Positioned to the Left) -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="220dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#FF0000"
+        android:gravity="center|top"
+        android:padding="8dp"
+        android:text="@string/title"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5" />
+
+
+    <!-- Message List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewUsers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:dividerHeight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomNav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle">
+
+        <!-- Home Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">  <!-- Ensure both items are aligned vertically in the center -->
+
+            <ImageView
+                android:id="@+id/homeIcon"
+                android:layout_width="100dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/homeIcon"
+                android:src="@drawable/home" />
+
+            <Button
+                android:id="@+id/btnHome"
+                android:layout_width="92dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/Home"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <!-- Post Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">  <!-- Ensure both items are aligned vertically in the center -->
+
+            <ImageView
+                android:id="@+id/postIcon"
+                android:layout_width="100dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/postIcon"
+                android:src="@drawable/post" />
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="92dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/Post"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+        <!-- Info Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/infoIcon"
+                android:layout_width="100dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/infoIcon"
+                android:src="@drawable/info_red" />
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="92dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/Info"
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Like Button -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/meIcon"
+                android:layout_width="100dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@string/likeIcon"
+                android:src="@drawable/me" />
+
+            <Button
+                android:id="@+id/btnLike"
+                android:layout_width="92dp"
+                android:layout_height="48dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="@string/Like"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

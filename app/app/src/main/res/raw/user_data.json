@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "username": "comp2100@anu.edu.au",
+      "password": "comp2100","id":"1",
+      "avatar": "img1",
+      "name":"comp2100"
+    },
+    {
+      "username": "comp6442@anu.edu.au",
+      "password": "comp6442","id":"2",
+      "avatar": "img2",
+      "name":"comp6442"
+    },
+    {
+      "username": "a",
+      "password": "a",
+      "id":"3",
+      "avatar": "img1",
+      "name": "UserA"
+    },
+    {"username": "6442p2ptest@gmail.com",
+      "password": "test123456!",
+      "id":"4",
+      "avatar": "img3",
+      "name": "Hello"
+    }
+  ]
+}
